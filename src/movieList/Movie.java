@@ -2,28 +2,37 @@ package movieList;
 
 
 public class Movie {
-
+// Movie object class.  Stores two variables to each object : title and category
 	String title;
-	String category;
+	int category;
 	
-	public Movie(String movie, String cat) {
+	public Movie(String movie, int category) {
+		// constructor
 		title = movie;
-		category = cat;
+		this.category = category;
 	}
 
 	public String getTitle() {
+		// return title
+		
 		return title;
 	}
 
 	public void setTitle(String title) {
+		// set title
+		
 		this.title = title;
 	}
 
-	public String getCategory() {
+	public int getCategory() {
+		// get category
+		
 		return category;
 	}
 
-	public void setCategory(String category) {
+	public void setCategory(int category) {
+		// set category
+		
 		this.category = category;
 	}
 
